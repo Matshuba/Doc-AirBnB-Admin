@@ -1,0 +1,105 @@
+/* AddDoctor.css */
+.add {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #999;
+  color: black;
+}
+
+.add .newContainer {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  background-color: #999;
+  color: black;
+}
+
+.add .newContainer .bottom {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  background-color: rgb(167, 102, 102);
+  border-radius: 12px;
+  color: black;
+}
+
+.add .newContainer .bottom .left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.add .newContainer .bottom .left img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.add .newContainer .bottom .right {
+  flex: 2;
+  color: black;
+}
+
+.add .newContainer .bottom .right form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  color: black;
+}
+
+.add .newContainer .bottom .right form .formInput {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.add .newContainer .bottom .right form .formInput label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+}
+
+.add .newContainer .bottom .right form .formInput input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #999;
+  outline: none;
+  font-size: 14px;
+  background-color: transparent;
+  color: black;
+}
+
+.add .newContainer .bottom .right form button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 12px;
+  background-color: teal;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add .newContainer .bottom .right form button:hover {
+  background-color: #006666;
+}
+
+.add .newContainer .bottom .right form button:disabled {
+  background-color: rgba(3, 92, 92, 0.322);
+  cursor: not-allowed;
+}

@@ -1,0 +1,131 @@
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 240px;
+  background-color: #adc6eb;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 999;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+/* Collapsed sidebar */
+.sidebar-container.collapsed {
+  width: 70px;
+}
+
+/* Sidebar header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+/* Hide sidebar title text when collapsed */
+.sidebar-container.collapsed .sidebar-header-text {
+  display: none;
+}
+
+.sidebar-header-text {
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Admin info */
+.admin-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+.admin-username {
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.admin-role {
+  color: #4caf50;
+  font-size: 14px;
+}
+
+/* Hide admin info text when collapsed */
+.sidebar-container.collapsed .admin-info {
+  display: none;
+}
+
+/* Menu container */
+.menu {
+  flex-grow: 1;
+}
+
+/* Menu items */
+.menu-item {
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background 0.2s ease;
+}
+
+.menu-item:hover {
+  background-color: #5c6bc0;
+}
+
+.menu-item.active {
+  background-color: #1e88e5;
+}
+
+.menu-item-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Hide menu item text when collapsed */
+.sidebar-container.collapsed .menu-item-text {
+  display: none;
+}
+
+.menu-item-text {
+  font-size: 16px;
+}
+
+/* Logout button */
+.logout-button {
+  color: #3a2fd8;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Hide logout text when collapsed */
+.sidebar-container.collapsed .logout-button span,
+.sidebar-container.collapsed .logout-button .menu-item-text,
+.sidebar-container.collapsed .logout-button typography {
+  display: none;
+}
+
+.logout-button:hover {
+  background-color: #a598db;
+}

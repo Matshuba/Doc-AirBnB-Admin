@@ -1,0 +1,125 @@
+/* ManageDoctor.css */
+
+/* Overall container */
+.manage-doctor-container {
+  padding: 1rem;
+  margin-left: 200px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #0b73db;
+}
+
+.manage-doctor-container h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+/* Form styling */
+input, textarea {
+  border: 1px solid #e2e8f0;
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+input:focus, textarea:focus {
+  border-color: #3182ce;
+  outline: none;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Buttons */
+button {
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.bg-blue-500 {
+  background-color: #4299e1;
+  color: white;
+}
+
+.bg-green-500 {
+  background-color: #48bb78;
+  color: white;
+}
+
+.bg-red-500 {
+  background-color: #f56565;
+  color: white;
+}
+
+.bg-gray-400 {
+  background-color: #e2e8f0;
+  color: white;
+}
+
+/* Flexbox for buttons */
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Doctor Info Section */
+.doctor-info {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #edf2f7;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-info h2 {
+  font-size: 1.25rem;
+  color: #3182ce;
+  margin-bottom: 1rem;
+}
+
+.doctor-info p {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.doctor-info p strong {
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* Loading Skeleton */
+.animate-pulse .h-6 {
+  background-color: #e2e8f0;
+  border-radius: 0.375rem;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
